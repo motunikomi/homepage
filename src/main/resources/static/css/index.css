@@ -1,0 +1,53 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.25;
+}
+
+h1{
+	width:650px;
+	height:150px;
+	margin: 0 auto;
+  	padding: 0;
+  	text-align:center;
+  	color: #38b48b;
+}
+
+table {
+  border-collapse: collapse;
+  margin: 0 auto;
+  padding: 0;
+  width: 650px;
+  table-layout: fixed;
+  color: #38b48b;
+}
+
+table tr {
+  background-color: #fff;
+  padding: .35em;
+  border-bottom: 1px solid #bbb;
+}
+table thead{
+  border-bottom: 3px solid #18521b;
+}
+table tr:last-child{
+   border-bottom: none;
+}
+table th,
+table td {
+  padding: 1em 10px 1em 1em;
+  border-right: 1px solid #bbb;
+}
+table th:last-child,
+table td:last-child{
+    border: none;
+}
+tbody th {
+    color: #38b48b;
+}
+.txt{
+   text-align: left;
+   font-size: .85em;
+}
+.price{
+   text-align: right;
+}

@@ -6,7 +6,7 @@ header{
     border:solid 10px #ccc;
 }
 body {
-    background-image: url("dandelion-seeds-pattern-1113.png");
+    background-image: url("@{/image/dandelion-seeds-pattern-1113.png}");
     font-family: 'Century Gothic','MV Boil','Book Antiqua';
 }
 /* */
