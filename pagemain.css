@@ -1,0 +1,28 @@
+header{
+    font-size: 30px;
+    text-align: center;
+    padding: 55px;
+    background-color: antiquewhite;
+    border:solid 10px #ccc;
+}
+body {
+    background-image: url("dandelion-seeds-pattern-1113.png");
+    font-family: 'Century Gothic','MV Boil','Book Antiqua';
+}
+/* */
+.images{
+   display: flex;
+   flex-wrap: wrap;
+   text-align: center;
+}
+.images li{
+    width: calc(100%/2);
+    padding:50px;
+    box-sizing: border-box;
+}
+.images li img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+    border:solid 3px #ccc;
+}
