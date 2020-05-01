@@ -4,7 +4,7 @@ pipeline {
     stage('test') {
       steps {
         withGradle() {
-          sh './gradlew check'
+          sh 'bash ./gradlew check'
         }
 
         junit(testResults: 'build\\test-results\\test\\TEST-*.xml', healthScaleFactor: 1)
