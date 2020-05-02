@@ -5,7 +5,7 @@ plugins {
 	id 'checkstyle'
 	id 'war'
 	id 'pmd'
-	id 'jacoco'
+//	id 'jacoco'
 }
 
 group = 'com.home'
@@ -55,8 +55,7 @@ test {
 	useJUnitPlatform()
 	maxParallelForks = 4
 }
-test.dependsOn jacocoTestReport
-
+/*
 jacoco {
     toolVersion = "0.8.5"
 }
@@ -67,3 +66,5 @@ jacocoTestReport {
         html.enabled = true
     }
 }
+test.dependsOn jacocoTestReport
+*/
