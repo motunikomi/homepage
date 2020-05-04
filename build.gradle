@@ -2,10 +2,10 @@ plugins {
 	id 'org.springframework.boot' version '2.2.6.RELEASE'
 	id 'io.spring.dependency-management' version '1.0.9.RELEASE'
 	id 'java'
-	id 'checkstyle'
+//	id 'checkstyle'
 	id 'war'
 	id 'pmd'
-	id 'jacoco'
+//	id 'jacoco'
 }
 
 group = 'com.home'
@@ -31,11 +31,13 @@ dependencies {
 		exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
 	}
 }
+/*
 checkstyle {
 	toolVersion '8.31'
 	configFile = file('./src/google_checks.xml')
 	ignoreFailures = true
 }
+*/
 pmd {
     toolVersion '6.10.0'
     ignoreFailures = true
@@ -55,8 +57,8 @@ test {
 	useJUnitPlatform()
 	maxParallelForks = 4
 }
-test.dependsOn jacocoTestReport
 
+/*
 jacoco {
     toolVersion = "0.8.5"
 }
@@ -67,3 +69,5 @@ jacocoTestReport {
         html.enabled = true
     }
 }
+test.dependsOn jacocoTestReport
+*/
