@@ -1,3 +1,5 @@
+PROJECT_ROOT/app/tmp/logs/
+
 .gradle/
 .setting/
 bin/
