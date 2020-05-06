@@ -1,2 +1,12 @@
-#srcファイル以外すべて無視
-! src
+.gradle/
+.setting/
+bin/
+gradle/wrapper
+.classpath
+.project
+jenkinsfile
+build.gradle
+codecov.yml
+gradlew
+gradlew.bat
+setting.gradle
