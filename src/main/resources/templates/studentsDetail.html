@@ -9,28 +9,28 @@
 
 <body>
     <header>
-        <h1>名前</h1>
+        <h1>名前:[[${name}]]</h1>
     </header>
     <ul class="images">
-        <li><a href="studentsDetail.html"><img src="metallic-grid-pattern-530.png"></a>
+        <li><a th:href="@{/students}"><img th:src="@{/image/{name}.png(name = ${name})}"></a>
         </li>
     </ul>
     <table width="350" border="1" align="center">
         <tr>
             <th>身長</th>
-            <td>???</td>
+            <td>[[${height}]]</td>
         </tr>
         <tr>
             <th>体重</th>
-            <td>???</td>
+            <td>[[${weight}]]</td>
         </tr>
         <tr>
             <th>Today's dinner 投稿済</th>
-            <td>Y / N</td>
+            <td>[[${todays}]]</td>
         </tr>
         <tr>
             <th>座右の銘</th>
-            <td>???</td>
+            <td>[[${zayuu}]]</td>
         </tr>
     </table>
 </body>
