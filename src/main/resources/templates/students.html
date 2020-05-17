@@ -1,5 +1,5 @@
-<!DOCTYPE hrml>
-<html lang="jaj">
+<!DOCTYPE html>
+<html lang="ja">
 
 <head>
     <meta chaeset="UTF-8">
@@ -13,7 +13,7 @@
     </header>
     <ul class="images">
     	<li th:each="students : ${stlist}">
-    		<a href="studentsDetail.html" th:href="@{students/detail/{id}(id=${students.id})}">
+    		<a th:href="@{students/detail/{id}(id=${students.id})}">
     			<img th:src="@{/image/{name}.png(name = ${students.name})}">
     		</a>
     	</li>

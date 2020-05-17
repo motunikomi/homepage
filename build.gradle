@@ -6,6 +6,7 @@ plugins {
 	id 'war'
 	id 'pmd'
 //	id 'jacoco'
+	id "org.sonarqube" version "2.8"
 }
 
 group = 'com.home'
@@ -57,6 +58,16 @@ test {
 	useJUnitPlatform()
 	maxParallelForks = 4
 }
+
+sonarqube {
+  properties {
+    property "sonar.projectKey", "motunikomi_homepage"
+    property "sonar.organization", "krtnstk"
+    property "sonar.host.url", "https://sonarcloud.io"
+    property "sonar.login", "670f14f90e985928335e693fbbf61df5e9b2ada7"
+  }
+}
+
 
 /*
 jacoco {
